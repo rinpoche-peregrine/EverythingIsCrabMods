@@ -1,0 +1,7 @@
+{
+	"name": "SkipIntro",
+	"version_number": "0.1.0",
+	"website_url": "https://github.com/rinpoche-peregrine/EverythingIsCrabMods",
+	"description": "Skips the Odd Dreams Digital and publisher splash videos at game launch.",
+	"dependencies": []
+}
