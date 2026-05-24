@@ -4,7 +4,7 @@ using System.Linq;
 using BepInEx.Unity.IL2CPP;
 using HarmonyLib;
 
-namespace EverythingIsCrabPlugin;
+namespace SkipIntroPlugin;
 
 [BepInPlugin(MyPluginInfo.PLUGIN_GUID, MyPluginInfo.PLUGIN_NAME, MyPluginInfo.PLUGIN_VERSION)]
 public class Plugin : BasePlugin {

@@ -3,14 +3,14 @@
 		<TargetFramework>net6.0</TargetFramework>
 		<LangVersion>latest</LangVersion>
 		<Nullable>disable</Nullable>
-		<AssemblyName>EverythingIsCrabPlugin</AssemblyName>
-		<RootNamespace>EverythingIsCrabPlugin</RootNamespace>
+		<AssemblyName>SkipIntroPlugin</AssemblyName>
+		<RootNamespace>SkipIntroPlugin</RootNamespace>
 		<AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
 	</PropertyGroup>
 
 	<!-- Thunderstore-style packaging metadata. Keep PluginVersion in sync with MyPluginInfo.cs and Packaging/manifest.json. -->
 	<PropertyGroup>
-		<PluginVersion>0.1.0</PluginVersion>
+		<PluginVersion>0.1.1</PluginVersion>
 		<PackageAuthor>Bungus</PackageAuthor>
 		<PackageName>SkipIntro</PackageName>
 		<PackageFullName>$(PackageAuthor)-$(PackageName)</PackageFullName>

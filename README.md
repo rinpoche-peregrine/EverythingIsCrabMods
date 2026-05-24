@@ -16,7 +16,7 @@ The stable BepInEx 5 / 6 packs on Thunderstore do not work. Unity 6 IL2CPP needs
 1. Install BepInEx into your game folder. `winhttp.dll` should sit next to `Everything is Crab.exe`.
 2. Launch the game once and close it. BepInEx generates the interop assemblies on first launch.
 3. Download `Bungus-SkipIntro-X.X.X.zip` from the [Releases](../../releases) page.
-4. Extract it into `BepInEx/plugins/`. The DLL ends up at `BepInEx/plugins/Bungus-SkipIntro/EverythingIsCrabPlugin.dll`.
+4. Extract it into `BepInEx/plugins/`. The DLL ends up at `BepInEx/plugins/Bungus-SkipIntro/SkipIntroPlugin.dll`.
 5. Launch the game.
 
 If you use r2modman, Gale, or the Thunderstore App, "Install from file" with the zip also works.

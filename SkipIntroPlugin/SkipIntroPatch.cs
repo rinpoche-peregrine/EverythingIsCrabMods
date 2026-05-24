@@ -2,7 +2,7 @@ using System;
 using GameFlow;
 using HarmonyLib;
 
-namespace EverythingIsCrabPlugin;
+namespace SkipIntroPlugin;
 
 // Postfix on Start: stop the splash coroutines before they can run, jump CurrentState
 // straight to Ready, and trigger the main-menu transition. Start() returns IEnumerator

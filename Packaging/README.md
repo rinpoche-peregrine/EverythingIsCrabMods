@@ -11,7 +11,7 @@ Skips the two splash videos at game startup. Goes straight to the main menu.
 
 1. Install BepInEx into your game folder.
 2. Launch the game once and close it to generate `BepInEx/interop/`.
-3. Drop `EverythingIsCrabPlugin.dll` into `BepInEx/plugins/Bungus-SkipIntro/`.
+3. Drop `SkipIntroPlugin.dll` into `BepInEx/plugins/Bungus-SkipIntro/`.
 4. Launch.
 
 ## Install (mod manager)
