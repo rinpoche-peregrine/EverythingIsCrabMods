@@ -13,10 +13,20 @@ The stable BepInEx 5 / 6 packs on Thunderstore do not work. Unity 6 IL2CPP needs
 
 ## Install
 
+### Easiest: use Crab Mod Manager
+
+1. Get [Crab Mod Manager](https://github.com/rinpoche-peregrine/CrabModManager) and place its exe in your game folder.
+2. Run it. Click "Install BepInEx" if you do not have BepInEx yet. Launch the game once afterward, then close it.
+3. Download `Bungus-SkipIntro-X.X.X.zip` from the [Releases](../../releases) page or from [Nexus Mods](https://www.nexusmods.com/everythingiscrab/mods/1).
+4. Drag the zip onto the Crab Mod Manager window.
+5. Launch the game.
+
+### Manual
+
 1. Install BepInEx into your game folder. `winhttp.dll` should sit next to `Everything is Crab.exe`.
-2. Launch the game once and close it. BepInEx generates the interop assemblies on first launch.
-3. Download `Bungus-SkipIntro-X.X.X.zip` from the [Releases](../../releases) page.
-4. Extract it into `BepInEx/plugins/`. The DLL ends up at `BepInEx/plugins/Bungus-SkipIntro/SkipIntroPlugin.dll`.
+2. Launch the game once and close it. BepInEx generates interop assemblies on first launch.
+3. Download the zip from [Releases](../../releases) or [Nexus Mods](https://www.nexusmods.com/everythingiscrab/mods/1).
+4. Extract the `plugins/Bungus-SkipIntro/` folder into `BepInEx/plugins/`. The DLL ends up at `BepInEx/plugins/Bungus-SkipIntro/SkipIntroPlugin.dll`.
 5. Launch the game.
 
 If you use r2modman, Gale, or the Thunderstore App, "Install from file" with the zip also works.

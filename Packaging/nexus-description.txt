@@ -1,0 +1,47 @@
+[size=5][b]Skip Intro[/b][/size]
+
+A BepInEx mod for Everything is Crab. Skips the two splash videos at game startup. Goes straight to the main menu.
+
+[size=4][b]Requirements[/b][/size]
+
+[list]
+[*]Everything is Crab (tested 1.0.1__8213)
+[*]BepInEx 6 BleedingEdge IL2CPP (CoreCLR), build 755 or newer
+[/list]
+
+The stable BepInEx 5 / 6 packs do not work. Unity 6 IL2CPP needs the BleedingEdge build.
+
+[size=4][b]Install: easiest way[/b][/size]
+
+Use [url=https://www.nexusmods.com/everythingiscrab/mods/2]Crab Mod Manager[/url] (or [url=https://github.com/rinpoche-peregrine/CrabModManager]grab it from GitHub[/url]).
+
+[list=1]
+[*]Place CrabModManager.exe in your Everything is Crab install folder.
+[*]Run it. Click "Install BepInEx" if you do not have BepInEx yet.
+[*]Launch the game once, then close it (this generates BepInEx interop files).
+[*]Download this Skip Intro zip from Nexus.
+[*]Drag the zip onto the Crab Mod Manager window.
+[*]Launch the game.
+[/list]
+
+[size=4][b]Install: manual[/b][/size]
+
+[list=1]
+[*]Install BepInEx 6 BE 755+ from [url=https://builds.bepinex.dev/projects/bepinex_be]builds.bepinex.dev[/url]. winhttp.dll should sit next to Everything is Crab.exe.
+[*]Launch the game once to generate BepInEx/interop/.
+[*]Download this Skip Intro zip from Nexus.
+[*]Extract plugins/Bungus-SkipIntro/ into your BepInEx/plugins/ folder. Final path: BepInEx/plugins/Bungus-SkipIntro/SkipIntroPlugin.dll
+[*]Launch the game.
+[/list]
+
+[size=4][b]Uninstall[/b][/size]
+
+Click Uninstall in Crab Mod Manager, or delete the Bungus-SkipIntro folder from BepInEx/plugins/.
+
+[size=4][b]Source[/b][/size]
+
+[url=https://github.com/rinpoche-peregrine/EverythingIsCrabMods]github.com/rinpoche-peregrine/EverythingIsCrabMods[/url]
+
+[size=4][b]Support[/b][/size]
+
+[url=https://ko-fi.com/Z8Z852YLV]ko-fi.com/Z8Z852YLV[/url]
