@@ -36,3 +36,9 @@ Harmony postfix on `GameFlow.PlayIntroSplashScreen.Start`. Stops the splash coro
 
 - Bungus
 - Built with [BepInEx](https://github.com/BepInEx/BepInEx) and [HarmonyX](https://github.com/BepInEx/HarmonyX).
+
+## Support
+
+If you find this useful, you can buy me a coffee:
+
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/Z8Z852YLV)
