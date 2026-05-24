@@ -4,3 +4,7 @@ obj/
 .vs/
 dist/
 EverythingIsCrabPlugin/package*/
+
+# Dev-only / local tooling — not part of the mod itself
+CLAUDE.md
+publish.ps1
