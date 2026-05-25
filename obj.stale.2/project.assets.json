@@ -1,0 +1,97 @@
+{
+  "version": 3,
+  "targets": {
+    "net6.0": {}
+  },
+  "libraries": {},
+  "projectFileDependencyGroups": {
+    "net6.0": [
+      "BepInEx.PluginInfoProps >= 2.*",
+      "BepInEx.Unity.IL2CPP >= 6.0.0-be.*"
+    ]
+  },
+  "packageFolders": {
+    "/sessions/youthful-vigilant-albattani/.nuget/packages/": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "/sessions/youthful-vigilant-albattani/mnt/Everything is Crab Modding/EverythingIsCrabPlugin/EverythingIsCrabPlugin.csproj",
+      "projectName": "EverythingIsCrabPlugin",
+      "projectPath": "/sessions/youthful-vigilant-albattani/mnt/Everything is Crab Modding/EverythingIsCrabPlugin/EverythingIsCrabPlugin.csproj",
+      "packagesPath": "/sessions/youthful-vigilant-albattani/.nuget/packages/",
+      "outputPath": "/sessions/youthful-vigilant-albattani/mnt/Everything is Crab Modding/EverythingIsCrabPlugin/obj/",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "/sessions/youthful-vigilant-albattani/.nuget/NuGet/NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "net6.0"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {},
+        "https://api.nuget.org/v3/index.json": {},
+        "https://nuget.bepinex.dev/v3/index.json": {}
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net6.0": {
+        "targetAlias": "net6.0",
+        "dependencies": {
+          "BepInEx.PluginInfoProps": {
+            "suppressParent": "All",
+            "target": "Package",
+            "version": "[2.*, )"
+          },
+          "BepInEx.Unity.IL2CPP": {
+            "include": "Compile",
+            "target": "Package",
+            "version": "[6.0.0-be.*, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "/tmp/dotnet/sdk/6.0.428/RuntimeIdentifierGraph.json"
+      }
+    }
+  },
+  "logs": [
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Unable to load the service index for source https://nuget.bepinex.dev/v3/index.json.",
+      "libraryId": "BepInEx.Unity.IL2CPP"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Unable to load the service index for source https://nuget.bepinex.dev/v3/index.json.",
+      "libraryId": "BepInEx.PluginInfoProps"
+    }
+  ]
+}

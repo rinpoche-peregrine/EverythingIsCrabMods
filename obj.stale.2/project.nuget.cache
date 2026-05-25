@@ -1,0 +1,21 @@
+{
+  "version": 2,
+  "dgSpecHash": "J2FJuDOHcIVdk5EXel4qMimBVG5g+/npX4qzPW8lpIYmf/IUyLC2LbT7bceAlGor2B10i8K1Dpr7MQQRXEIY5g==",
+  "success": false,
+  "projectFilePath": "/sessions/youthful-vigilant-albattani/mnt/Everything is Crab Modding/EverythingIsCrabPlugin/EverythingIsCrabPlugin.csproj",
+  "expectedPackageFiles": [],
+  "logs": [
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Unable to load the service index for source https://nuget.bepinex.dev/v3/index.json.",
+      "libraryId": "BepInEx.Unity.IL2CPP"
+    },
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Unable to load the service index for source https://nuget.bepinex.dev/v3/index.json.",
+      "libraryId": "BepInEx.PluginInfoProps"
+    }
+  ]
+}

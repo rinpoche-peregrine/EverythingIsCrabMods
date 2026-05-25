@@ -1,6 +1,6 @@
 {
   "name": "SkipIntro",
-  "version_number": "0.1.2",
+  "version_number": "0.1.1",
   "website_url": "https://github.com/rinpoche-peregrine/EverythingIsCrabMods",
   "description": "Skips the two splash videos at game startup.",
   "dependencies": []
