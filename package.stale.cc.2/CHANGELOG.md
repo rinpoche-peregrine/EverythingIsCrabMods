@@ -1,10 +1,5 @@
 # Changelog
 
-## 0.2.1
-
-- Fix: 0.2.0 fired the main-menu transition twice (once from the splash's natural call after gates were already ready, once from the gate's retry), which caused a SceneManager error and a blank main menu. Now the gate tracks whether the transition has already fired and skips its retry path.
-
-
 ## 0.2.0
 
 - Added a "wait for extra readiness" gate (default on, configurable). The splash transition now holds until Analytics, PurchasablesSyncerRuntimeManager, and CosmeticsRuntimeManager all report ready, in addition to the Localisation + RemoteConfig gates the splash already checks.
