@@ -2,7 +2,7 @@
 
 <img src="Packaging/icon.png" width="160" align="right" alt="Skip Intro icon" />
 
-A BepInEx mod for *Everything is Crab*. Skips the two splash videos at startup and goes straight to the main menu.
+A BepInEx mod for *Everything is Crab*. Skips the two splash videos at startup and goes straight to the main menu, without racing past the game's background loading.
 
 ## Requirements
 
@@ -35,12 +35,20 @@ If you use r2modman, Gale, or the Thunderstore App, "Install from file" with the
 
 - Skips the Odd Dreams Digital intro video.
 - Skips the publisher splash video.
-- Goes straight to the main menu after localisation and remote config load.
+- Goes straight to the main menu only after all the background loading actually finishes. No race conditions on slow hardware.
 - Removable by deleting the plugin folder.
+
+## Config
+
+`BepInEx/config/com.bungus.everythingiscrab.skipintro.cfg`:
+
+- `[Behavior] WaitForExtraReadiness` (default true): Hold the main-menu transition until Analytics, PurchasablesSyncerRuntimeManager, and CosmeticsRuntimeManager all report ready, in addition to the game's own Localisation + RemoteConfig gates. Falls back to a 30s safety timeout if any gate hangs (e.g. analytics consent flow stalled). Set false to skip extra gating and rely only on the game's built-in readiness checks.
 
 ## How it works
 
-Harmony postfix on `GameFlow.PlayIntroSplashScreen.Start`. Stops the splash coroutine, sets `CurrentState = Ready`, calls `TryMoveToMainMenu()`.
+Harmony postfix on `GameFlow.PlayIntroSplashScreen.Awake`: zeroes `_timeToWaitForVideoPreparation` and `_timeToWaitForVideoToPlay`, stops both `VideoPlayer`s. The game's own state machine then runs unchanged through `Watching1stVideo` → `WaitingForLocalisation` → `WaitingForRemoteConfig` → `Ready`, just on a fast clock.
+
+For the extra readiness gate, a `SplashReadinessGate` MonoBehaviour is attached to the splash GameObject. It polls `UgsAnalytics.AnalyticsInitialized.IsReady`, `PurchasablesSyncerRuntimeManager.Instance.IsReady`, and `CosmeticsRuntimeManager.Instance.IsReady` each frame. A Harmony prefix on `TryMoveToMainMenu` suppresses the splash's natural transition call until all gates report ready, then lets it through. If any gate hangs past 30 seconds, the transition fires anyway and logs which gates were still pending.
 
 ## Credits
 
